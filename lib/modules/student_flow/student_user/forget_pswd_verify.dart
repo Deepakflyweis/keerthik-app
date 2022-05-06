@@ -1,4 +1,5 @@
 
+
 import 'package:flutter/material.dart';
 import 'package:kerthik_app/controller/student_controller/otp_controller.dart';
 import 'package:kerthik_app/modules/parent_flow/parent_home/home_Screen.dart';
@@ -10,14 +11,14 @@ import 'package:kerthik_app/widgets/otp_input.dart';
 
 import '../../../utils/packages_used.dart';
 
-class StudentOtpVerify extends StatefulWidget {
-  const StudentOtpVerify({Key? key}) : super(key: key);
+class ForgetPswdVerify extends StatefulWidget {
+  const ForgetPswdVerify({Key? key}) : super(key: key);
 
   @override
-  _StudentOtpVerifyState createState() => _StudentOtpVerifyState();
+  _ForgetPswdVerifyState createState() => _ForgetPswdVerifyState();
 }
 
-class _StudentOtpVerifyState extends State<StudentOtpVerify> {
+class _ForgetPswdVerifyState extends State<ForgetPswdVerify> {
 
   final VerifyController _verifyController = Get.put(VerifyController());
 
@@ -42,19 +43,19 @@ class _StudentOtpVerifyState extends State<StudentOtpVerify> {
                 SizedBox(height: 4.h),
                 const Center(
                   child: Text(" A 5-Digit Pin has been sent to your ",
-                  style: TextStyle(
-                    fontSize: 17.0,
-                    color: blckclr,
-                    fontWeight: FontWeight.normal,
-                  )),
+                      style: TextStyle(
+                        fontSize: 17.0,
+                        color: blckclr,
+                        fontWeight: FontWeight.normal,
+                      )),
                 ),
                 const Center(
                   child: Text(" phone no.Enter it below to continue",
-                  style: TextStyle(
-                    fontSize: 17.0,
-                    color: blckclr,
-                    fontWeight: FontWeight.normal,
-                  )),
+                      style: TextStyle(
+                        fontSize: 17.0,
+                        color: blckclr,
+                        fontWeight: FontWeight.normal,
+                      )),
                 ),
                 SizedBox(height: 5.h),
                 Row(
@@ -70,9 +71,9 @@ class _StudentOtpVerifyState extends State<StudentOtpVerify> {
                 ),
                 SizedBox(height: 10.h),
                 CustomButton(
-                   onPressed: (){
-                     Get.to(() => StudentLogin());
-                   },
+                  onPressed: (){
+                    Get.to(() => StudentLogin());
+                  },
                   text: 'Verify',
                 ),
                 SizedBox(height: 2.h),

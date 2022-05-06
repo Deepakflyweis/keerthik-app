@@ -18,10 +18,10 @@ class CustomTxtfield extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 6.h,
-      width: 85.w,
+      width: 88.w,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        border: Border.all(width: 0.5,color: Colors.black12,),
+        border: Border.all(width: 1.0,color: Colors.black12,),
         borderRadius: BorderRadius.circular(25.0),
       ),
       child: TextFormField(

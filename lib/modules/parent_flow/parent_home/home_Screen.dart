@@ -1,5 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:kerthik_app/modules/exam_module/exam_screen.dart';
+import 'package:kerthik_app/modules/notifications/notification_screen.dart';
+import 'package:kerthik_app/modules/result_module/result_screen.dart';
 import 'package:kerthik_app/utils/app_color.dart';
 import 'package:kerthik_app/utils/packages_used.dart';
 import 'package:kerthik_app/utils/text_style.dart';
@@ -27,7 +30,7 @@ class _ParentDashboardState extends State<ParentDashboard> {
                     height: 12.h,
                     width: 30.w,
                     fit: BoxFit.cover,),
-                  SizedBox(width: 30.w,),
+                  SizedBox(width: 25.w,),
                   Image.asset('assets/images/sign-out.png',
                     height: 5.h,
                     width: 8.w,
@@ -40,9 +43,13 @@ class _ParentDashboardState extends State<ParentDashboard> {
                       fontSize: 20,
                     ),),
                   ),
-                  SizedBox(width: 2.w,),
-                  const Icon(
-                    Icons.notifications,color: blckclr,size: 30,
+                  IconButton(
+                    onPressed: (){
+                      Get.to(() => NotificationScreen());
+                    },
+                    icon: Icon(
+                      Icons.notifications,color: blckclr,size: 30,
+                    ),
                   ),
 
                 ],
@@ -63,7 +70,6 @@ class _ParentDashboardState extends State<ParentDashboard> {
                         Color(0xFFFF5E62),
                       ]
                     ),
-
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -106,13 +112,13 @@ class _ParentDashboardState extends State<ParentDashboard> {
                 children: [
                   GestureDetector(
                       onTap: () {
-
+                        Get.to(() => ResultScreen());
                       },
                       child: Image.asset('assets/images/result.png',width: 50.w,height: 20.h,fit: BoxFit.fill,)),
 
                   GestureDetector(
                       onTap: () {
-
+                        Get.to(() => ExamScreen());
                       },
                       child: Image.asset('assets/images/exams.png',width: 50.w,height: 20.h,fit: BoxFit.fill,)),
                 ],

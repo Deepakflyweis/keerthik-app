@@ -1,5 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:kerthik_app/modules/career_module/career_screen.dart';
+import 'package:kerthik_app/modules/exam_module/exam_screen.dart';
+import 'package:kerthik_app/modules/notifications/notification_screen.dart';
+import 'package:kerthik_app/modules/quiz_module/quiz_home.dart';
+import 'package:kerthik_app/modules/result_module/result_screen.dart';
 import 'package:kerthik_app/utils/packages_used.dart';
 import 'package:kerthik_app/utils/text_style.dart';
 
@@ -39,9 +44,12 @@ class _StudentDashboardState extends State<StudentDashboard> {
                     fontWeight: FontWeight.bold
                   ),),
                   SizedBox(width: 2.w,),
-                  const Icon(
-                    Icons.notifications,color: blckclr,size: 30,
+                    IconButton(
+                      onPressed: () =>  Get.to(() => NotificationScreen()),
+                       icon: Icon(
+                      Icons.notifications,color: blckclr,size: 30,
                   ),
+                    ),
 
                 ],
               ),
@@ -104,13 +112,13 @@ class _StudentDashboardState extends State<StudentDashboard> {
                 children: [
                   GestureDetector(
                       onTap: () {
-
+                        Get.to(() => ResultScreen());
                       },
                       child: Image.asset('assets/images/result.png',width: 50.w,height: 20.h,fit: BoxFit.fill,)),
 
                   GestureDetector(
                       onTap: () {
-
+                        Get.to(() => ExamScreen());
                       },
                       child: Image.asset('assets/images/exams.png',width: 50.w,height: 20.h,fit: BoxFit.fill,)),
                 ],
@@ -122,13 +130,13 @@ class _StudentDashboardState extends State<StudentDashboard> {
                 children: [
                   GestureDetector(
                       onTap: () {
-
+                        Get.to(() => CareerScreen());
                       },
                       child: Image.asset('assets/images/career.png',width: 50.w,height: 20.h,fit: BoxFit.fill,)),
 
                   GestureDetector(
                       onTap: () {
-
+                        Get.to(() => QuizHomeScreen());
                       },
                       child: Image.asset('assets/images/quiz.png',width: 50.w,height: 20.h,fit: BoxFit.fill,)),
                 ],

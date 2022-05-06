@@ -1,9 +1,9 @@
 
 
-
 import 'package:flutter/material.dart';
 import 'package:kerthik_app/controller/parent_controller/parent_login_controller.dart';
 import 'package:kerthik_app/controller/student_controller/student_login_controller.dart';
+import 'package:kerthik_app/modules/parent_flow/parent_home/home_Screen.dart';
 import 'package:kerthik_app/modules/parent_flow/user/forget_password.dart';
 import 'package:kerthik_app/modules/parent_flow/user/parent_register.dart';
 import 'package:kerthik_app/utils/app_color.dart';
@@ -74,7 +74,7 @@ class ParentLogin extends StatelessWidget {
                   CustomButton(
                     text: 'SIGN IN',
                     onPressed: () {
-
+                      Get.offAll(() => ParentDashboard());
                     } ,
                   ),
                   SizedBox(height: 2.h,),

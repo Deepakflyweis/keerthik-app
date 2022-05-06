@@ -78,6 +78,8 @@ class _ExamScreenState extends State<ExamScreen> {
                 SizedBox(height: 5.h,),
                 Text('OnGoing Exam',style: TxtStyleN,),
                 SizedBox(height: 2.h,),
+
+                ///ongoing exam
                 SizedBox(
                   height: 20.h,
                   child: ListView.builder(
@@ -108,7 +110,7 @@ class _ExamScreenState extends State<ExamScreen> {
                                       SizedBox(
                                         height: 8.h,
                                         width: 10.w,
-                                        child: Image.network('https://images.hindustantimes.com/img/2021/11/10/1600x900/ajit_doval_1636519089920_1636519110287.jpg',
+                                        child: Image.asset('assets/images/test.png',
                                           fit: BoxFit.fill,
                                           errorBuilder:  (context,_,__)  => Container(
                                             height: 100,
@@ -146,6 +148,8 @@ class _ExamScreenState extends State<ExamScreen> {
                 SizedBox(height: 2.h,),
                 Text('Upcoming Exam',style: TxtStyleN,),
                 SizedBox(height: 2.h,),
+
+                ///upcoming exam
                 SizedBox(
                   height: 20.h,
                   child: ListView.builder(
@@ -176,7 +180,7 @@ class _ExamScreenState extends State<ExamScreen> {
                                       SizedBox(
                                         height: 8.h,
                                         width: 10.w,
-                                        child: Image.network('https://images.hindustantimes.com/img/2021/11/10/1600x900/ajit_doval_1636519089920_1636519110287.jpg',
+                                        child: Image.asset('assets/images/test.png',
                                           fit: BoxFit.fill,
                                           errorBuilder:  (context,_,__)  => Container(
                                             height: 100,
@@ -214,6 +218,8 @@ class _ExamScreenState extends State<ExamScreen> {
 
                 SizedBox(height: 2.h,),
                 Text('Past Exam',style: TxtStyleN,),
+
+                ///Past exam
                 SizedBox(height: 2.h,),
                 SizedBox(
                   height: 20.h,
@@ -245,7 +251,7 @@ class _ExamScreenState extends State<ExamScreen> {
                                       SizedBox(
                                         height: 8.h,
                                         width: 10.w,
-                                        child: Image.network('https://images.hindustantimes.com/img/2021/11/10/1600x900/ajit_doval_1636519089920_1636519110287.jpg',
+                                        child: Image.asset('assets/images/test.png',
                                           fit: BoxFit.fill,
                                           errorBuilder:  (context,_,__)  => Container(
                                             height: 100,

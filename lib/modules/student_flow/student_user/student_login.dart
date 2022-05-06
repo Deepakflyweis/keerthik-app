@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:kerthik_app/controller/student_controller/student_login_controller.dart';
 import 'package:kerthik_app/modules/parent_flow/user/forget_password.dart';
+import 'package:kerthik_app/modules/student_flow/student_home/student_dashboard.dart';
 import 'package:kerthik_app/modules/student_flow/student_user/student_register.dart';
 import 'package:kerthik_app/utils/app_color.dart';
 import 'package:kerthik_app/utils/packages_used.dart';
@@ -71,6 +72,7 @@ class StudentLogin extends StatelessWidget {
                   CustomButton(
                     text: 'SIGN IN',
                     onPressed: () {
+                      Get.offAll(() => StudentDashboard());
                     } ,
                   ),
                   SizedBox(height: 2.h,),
